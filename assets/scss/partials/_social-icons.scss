@@ -1,6 +1,7 @@
 .social-icons {
   display: flex;
   justify-content: center;
+
 }
 
 .social-icons__link {
@@ -13,7 +14,10 @@
   .social-icons__icon {
     width: 1.4rem;
     height: 1.4rem;
-    background-size: contain;
-    background-repeat: no-repeat;
+    color: #111;
+
+    @media (prefers-color-scheme: dark) {
+      color: #fff;
+    }
   }
 }
